@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+
+body {
+    background: #dfe1e4; /*url(http://jsrun.it/assets/p/r/8/X/pr8Xi.png);  /*bg  1a1a1a  434240  */
+    color: rgb(48, 2, 122);
+    position: relative;
+    font-family: sans-serif;
+
+  }
+  /* p{
+    color:;
+  } */
+  
+  
+  .tabs {
+    background: #3d3f96;  /*topbar #c0392b #88565b*/
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 20px;
+  }
+  .tabs li {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  /*only for stmus*/
+  .tabs a {
+    background: #6f6fc5; 
+    display: block;
+    float: right ;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px 22px ;  
+    border-radius: 15px;
+
+  }
+ 
+  .tabs a.active {
+    background: #3d3f96;  /*topbar e74c3c  */
+    border-right: none;
+    -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      float: left;
+
+  }
+  .tabs li.right {
+    background: #3d3f96;  /*topbar e74c3c  */
+    border-right: none;
+    margin-top: 4px;
+  margin-right: 10px;
+  margin-left:600px ;
+  
+      float: right;
+
+  }
+  .tabs a.dp-btn{
+    top: -3px;
+   margin-left: 230px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    background-image: linear-gradient(#516ae7,#6d79d4),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+  }
+  .form-action {
+    padding: 0 50px;
+    position: relative;
+    color: #1e75aa;
+  }
+
+  
+  input[type=text], select, textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 12px 0;
+
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #e5ecf5ef;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  input[type=back] {
+    background-color: rgb(35, 82, 145);
+    color: white;
+    padding: 12px 20px;
+  	margin: 12px 0;
+    font-size: 15px;
+    width: 3%;
+    text-align: center; 
+
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: right;
+  }
+  .alignright {
+    float: right;
+    
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
